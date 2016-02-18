@@ -21,6 +21,10 @@ public class Operadora extends Agent {
 
     private Boolean canais[] = new Boolean[2];
     
+    private long limiteCanais;
+    private double taxaBloqueio;
+    private double oddsBloqueio;
+    
     /*   
     public Operadora(int qtdCanais) {
         
@@ -30,7 +34,7 @@ public class Operadora extends Agent {
     protected void setup(){
         
         canais[0] = true;
-        canais[1] = true;
+        canais[1] = false;
         
         //Criamos uma entrada no Directory Facilitator
         DFAgentDescription dfd = new DFAgentDescription();
